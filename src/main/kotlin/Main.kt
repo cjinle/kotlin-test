@@ -1,8 +1,8 @@
 
-import com.cjinle.utils.TestRetrofit
+import com.cjinle.utils.TestRetrofit2
 
 fun main() {
-    val test = TestRetrofit()
+    val test = TestRetrofit2()
     test.run()
 
 }

@@ -40,9 +40,9 @@ class TestRetrofit {
 
 }
 
-class Contributor(val login: String, val contributions: Int)
+data class Contributor(val login: String, val contributions: Int)
 
-class UserInfo(
+data class UserInfo(
     val login: String,
     val id: Int,
     val url: String,
