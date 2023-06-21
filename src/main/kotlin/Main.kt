@@ -1,9 +1,9 @@
 
 
-import com.cjinle.utils.TestHttp
+import com.cjinle.utils.TestBase
 
 fun main() {
-    val test = TestHttp()
+    val test = TestBase()
     test.run()
 
 }
