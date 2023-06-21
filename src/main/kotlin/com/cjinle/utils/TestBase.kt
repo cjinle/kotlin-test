@@ -2,7 +2,13 @@ package com.cjinle.utils
 
 class TestBase {
     fun run() {
-        _runData()
+//        _runEnum()
+        _runOther()
+    }
+
+    fun _runOther() {
+        val (x, y, z) = arrayOf(1,2,3)
+        println("$x,$y,$z")
     }
 
     fun _runCase() {
@@ -45,6 +51,18 @@ class TestBase {
         println("name = ${user.component1()}")
         println("id = ${user.component2()}")
     }
+
+    fun _runEnum() {
+        val state = State.RUNNING
+        val message  = when(state) {
+            State.IDLE -> "idle"
+            State.RUNNING -> "running"
+            State.FINISHED -> "finished"
+        }
+
+        println("state: $message")
+    }
+
 
     fun cases(obj: Any) {
         when(obj) {
@@ -103,6 +121,10 @@ class TestBase {
 }
 
 class MyClass
+
+enum class State {
+    IDLE, RUNNING, FINISHED
+}
 
 data class User(val name: String, val id: Int) {
     override fun equals(other: Any?) =
