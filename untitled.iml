@@ -12,9 +12,10 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
     <orderEntry type="library" name="jsoup-1.16.1" level="project" />
-    <orderEntry type="library" name="retrofit-2.9.0" level="project" />
     <orderEntry type="library" name="converter-gson-2.9.0" level="project" />
     <orderEntry type="library" name="okhttp-4.10.0" level="project" />
     <orderEntry type="library" name="okio-2.10.0" level="project" />
+    <orderEntry type="library" name="gson-2.10.1" level="project" />
+    <orderEntry type="library" name="retrofit-2.7.2" level="project" />
   </component>
 </module>
