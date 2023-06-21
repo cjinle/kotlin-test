@@ -3,9 +3,8 @@ package com.cjinle.utils
 import okhttp3.*
 import java.io.IOException
 
-const val API_URL = "https://www.51voa.com/Technology_Report_1.html"
-
 class TestHttp {
+    private val url = "https://www.51voa.com/Technology_Report_1.html"
     fun run() {
         println("test http start ... ")
         sync()
@@ -13,7 +12,7 @@ class TestHttp {
 
     fun sync() {
         val client = OkHttpClient()
-        var request = Request.Builder().url(API_URL).build()
+        var request = Request.Builder().url(url).build()
 
         val response = client.newCall(request).execute()
         println(response.body?.string())
@@ -21,7 +20,7 @@ class TestHttp {
 
     fun async() {
         val client = OkHttpClient()
-        var request = Request.Builder().url(API_URL).build()
+        var request = Request.Builder().url(url).build()
 
         client.newCall(request).enqueue(object: Callback{
             override fun onFailure(call: Call, e: IOException) {
